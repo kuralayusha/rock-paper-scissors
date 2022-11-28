@@ -17,11 +17,15 @@ function ScoreBoard({ gameMode }: ScoreBoardProps) {
       {gameMode === 'RPS' ? (
         <div className="s-b rps">
           <h1>rps scoreBoard</h1>
+          {/* LOGO */}
+          {/* SCOREBOARD */}
           <button onClick={handlePause}>pause</button>
         </div>
       ) : gameMode === 'RPSLS' ? (
         <div className="s-b rpsls">
           <h1>rpsls scoreBoard</h1>
+          {/* LOGO */}
+          {/* SCOREBOARD */}
           <button onClick={handlePause}>pause</button>
         </div>
       ) : null}

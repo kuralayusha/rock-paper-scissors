@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 type GamePauseProps = {
   setPause: (pause: boolean) => void
 }
@@ -9,7 +11,9 @@ function GamePause({ setPause }: GamePauseProps) {
   return (
     <div className="game--pause">
       <button onClick={handleResumeGame}>Resume</button>
-      <button>Main Menu</button>
+      <button>
+        <Link to="/">Main Menu</Link>
+      </button>
     </div>
   )
 }

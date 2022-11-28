@@ -1,4 +1,5 @@
 import ScoreBoard from '../components/ScoreBoard'
+import SelectIcon from '../components/SelectIcon'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
@@ -19,6 +20,7 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
         <div>
           <h1>Rock Paper Scissors</h1>
           <ScoreBoard gameMode={gameMode} />
+          <SelectIcon />
         </div>
       ) : (
         <div>
