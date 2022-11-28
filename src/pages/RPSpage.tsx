@@ -1,15 +1,31 @@
 import ScoreBoard from '../components/ScoreBoard'
+import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 type RPSpageProps = {
   gameMode: string
+  setGameMode: (gameMode: string) => void
 }
 
-function RPSpage({ gameMode }: RPSpageProps) {
+function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
+  useEffect(() => {
+    setGameMode('RPS')
+    console.log('setting game mode to RPS')
+  }, [])
+
   return (
-    <div>
-      <h1>Rock Paper Scissors</h1>
-      <ScoreBoard gameMode={gameMode} />
-    </div>
+    <>
+      {gameMode === 'RPS' ? (
+        <div>
+          <h1>Rock Paper Scissors</h1>
+          <ScoreBoard gameMode={gameMode} />
+        </div>
+      ) : (
+        <div>
+          Error: you have to select a <Link to="/">game mode</Link>
+        </div>
+      )}
+    </>
   )
 }
 

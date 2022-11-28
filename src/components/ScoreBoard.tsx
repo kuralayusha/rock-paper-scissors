@@ -13,17 +13,19 @@ function ScoreBoard({ gameMode }: ScoreBoardProps) {
   }
 
   return (
-    <div className="score--board" onClick={handlePause}>
+    <div className="score--board">
       {gameMode === 'RPS' ? (
         <div className="s-b rps">
           <h1>rps scoreBoard</h1>
+          <button onClick={handlePause}>pause</button>
         </div>
-      ) : (
+      ) : gameMode === 'RPSLS' ? (
         <div className="s-b rpsls">
           <h1>rpsls scoreBoard</h1>
+          <button onClick={handlePause}>pause</button>
         </div>
-      )}
-      {pause && <GamePause />}
+      ) : null}
+      {pause && <GamePause setPause={setPause} />}
     </div>
   )
 }

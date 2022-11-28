@@ -1,7 +1,15 @@
-function GamePause() {
+type GamePauseProps = {
+  setPause: (pause: boolean) => void
+}
+
+function GamePause({ setPause }: GamePauseProps) {
+  function handleResumeGame() {
+    setPause(false)
+  }
   return (
     <div className="game--pause">
-      <h1>Game Paused</h1>
+      <button onClick={handleResumeGame}>Resume</button>
+      <button>Main Menu</button>
     </div>
   )
 }

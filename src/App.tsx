@@ -17,11 +17,21 @@ function App() {
           />
           <Route
             path="/rps"
-            element={<RPSpage gameMode={gameMode} />}
+            element={
+              <RPSpage
+                gameMode={gameMode}
+                setGameMode={setGameMode}
+              />
+            }
           />
           <Route
             path="/rpsls"
-            element={<RPSLSpage gameMode={gameMode} />}
+            element={
+              <RPSLSpage
+                gameMode={gameMode}
+                setGameMode={setGameMode}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>
