@@ -3,9 +3,10 @@ import GamePause from './GamePause'
 
 type ScoreBoardProps = {
   gameMode: string
+  playerScore: number
 }
 
-function ScoreBoard({ gameMode }: ScoreBoardProps) {
+function ScoreBoard({ gameMode, playerScore }: ScoreBoardProps) {
   const [pause, setPause] = useState(false)
 
   function handlePause() {
@@ -18,14 +19,14 @@ function ScoreBoard({ gameMode }: ScoreBoardProps) {
         <div className="s-b rps">
           <h1>rps scoreBoard</h1>
           {/* LOGO */}
-          {/* SCOREBOARD */}
+          <h1>{playerScore}</h1>
           <button onClick={handlePause}>pause</button>
         </div>
       ) : gameMode === 'RPSLS' ? (
         <div className="s-b rpsls">
           <h1>rpsls scoreBoard</h1>
           {/* LOGO */}
-          {/* SCOREBOARD */}
+          <h1>{playerScore}</h1>
           <button onClick={handlePause}>pause</button>
         </div>
       ) : null}
