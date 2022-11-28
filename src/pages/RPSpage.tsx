@@ -61,11 +61,6 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
     }
   }, [playerPick, cpuPick])
 
-  //   shows the rules for the game
-  function handleShowRules() {
-    setShowRules(true)
-  }
-
   console.log({ playerPick }, { cpuPick }, playerScore)
 
   return (
@@ -89,8 +84,12 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
               setIsPlayerWinner={setIsPlayerWinner}
             />
           )}
-          <button onClick={handleShowRules}>Rules</button>
-          {showRules && <Rules setShowRules={setShowRules} />}
+          <button onClick={() => setShowRules(!showRules)}>
+            Rules
+          </button>
+          {showRules && (
+            <Rules setShowRules={setShowRules} gameMode={gameMode} />
+          )}
         </div>
       ) : (
         <div>

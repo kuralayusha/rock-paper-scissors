@@ -1,6 +1,7 @@
 import ScoreBoard from '../components/ScoreBoard'
 import SelectIcon from '../components/SelectIcon'
 import PlayerVsCpu from '../components/PlayerVsCpu'
+import Rules from '../components/Rules'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
@@ -16,6 +17,7 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
   const [isPlayerWinner, setIsPlayerWinner] = useState<
     boolean | string | null
   >(null)
+  const [showRules, setShowRules] = useState(false)
 
   useEffect(() => {
     setGameMode('RPSLS')
@@ -94,6 +96,12 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
               setCpuPick={setCpuPick}
               setIsPlayerWinner={setIsPlayerWinner}
             />
+          )}
+          <button onClick={() => setShowRules(!showRules)}>
+            Rules
+          </button>
+          {showRules && (
+            <Rules setShowRules={setShowRules} gameMode={gameMode} />
           )}
         </div>
       ) : (
