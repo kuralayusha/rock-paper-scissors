@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import GamePause from '../game_pause/GamePause'
+import rpsLogo from '../../images/logo.svg'
+import rpslsLogo from '../../images/logo-bonus.svg'
+import './ScoreBoard.css'
 
 type ScoreBoardProps = {
   gameMode: string
@@ -14,24 +17,26 @@ function ScoreBoard({ gameMode, playerScore }: ScoreBoardProps) {
   }
 
   return (
-    <div className="score--board">
+    <>
       {gameMode === 'RPS' ? (
-        <div className="s-b rps">
-          <h1>rps scoreBoard</h1>
-          {/* LOGO */}
-          <h1>{playerScore}</h1>
-          <button onClick={handlePause}>pause</button>
+        <div className="score--board rps">
+          <img src={rpsLogo} alt="" />
+          <button onClick={handlePause}>
+            <small>SCORE</small>
+            <p>{playerScore}</p>
+          </button>
         </div>
       ) : gameMode === 'RPSLS' ? (
-        <div className="s-b rpsls">
-          <h1>rpsls scoreBoard</h1>
-          {/* LOGO */}
-          <h1>{playerScore}</h1>
-          <button onClick={handlePause}>pause</button>
+        <div className="score--board rpsls">
+          <img src={rpslsLogo} alt="" />
+          <button onClick={handlePause}>
+            <small>SCORE</small>
+            <p>{playerScore}</p>
+          </button>
         </div>
       ) : null}
       {pause && <GamePause setPause={setPause} />}
-    </div>
+    </>
   )
 }
 
