@@ -15,6 +15,10 @@
     width: 83px;
 }
 
+.score--board.rpsls img {
+    width: 83px;
+}
+
 .score--board button {
     background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
