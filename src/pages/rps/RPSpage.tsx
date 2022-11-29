@@ -45,8 +45,8 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
         (playerPick === 'scissors' && cpuPick === 'paper') ||
         (playerPick === 'paper' && cpuPick === 'rock')
       ) {
-        setPlayerScore(playerScore + 1)
         setTimeout(() => {
+          setPlayerScore(playerScore + 1)
           setIsPlayerWinner(true)
         }, 1000)
       } else if (playerPick === cpuPick) {
@@ -54,8 +54,8 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
           setIsPlayerWinner('draw')
         }, 1000)
       } else {
-        setPlayerScore(playerScore - 1)
         setTimeout(() => {
+          setPlayerScore(playerScore - 1)
           setIsPlayerWinner(false)
         }, 1000)
       }

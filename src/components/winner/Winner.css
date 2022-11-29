@@ -1,0 +1,35 @@
+.winner {
+    width: 220px;
+    height: 131px;
+}
+
+.winner h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.winner button {
+    width: 220px;
+    height: 48px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+    border: none;
+    margin-top: 16px;
+
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    color: #3B4262;
+    text-transform: uppercase;
+}
