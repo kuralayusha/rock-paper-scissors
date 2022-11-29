@@ -1,3 +1,8 @@
+import rpsRules from '../../images/image-rules.svg'
+import rpslsRules from '../../images/image-rules-bonus.svg'
+import cancle from '../../images/icon-close.svg'
+import './Rules.css'
+
 type rulesProps = {
   setShowRules: (showRules: boolean) => void
   gameMode: string
@@ -9,25 +14,16 @@ function Rules({ setShowRules, gameMode }: rulesProps) {
   }
 
   return (
-    <div>
-      <h2>Rules</h2>
-
+    <div className="rules--container">
+      <h1>RULES</h1>
       {gameMode === 'RPS' ? (
-        <p>
-          Rock beats Scissors, Scissors beats Paper, Paper beats Rock.
-          If you both pick the same, it's a draw.
-        </p>
+        <img src={rpsRules} alt="rps rules" />
       ) : (
-        <p>
-          -rock beats scissors -rock beats lizard -lizard beats spock
-          -lizard beats paper -spock beats scissors -spock beats rock
-          -scissors beats paper -scissors beats lizard -paper beats
-          rock -paper beats spock -If you both pickthe same, it's a
-          draw.
-        </p>
+        <img src={rpslsRules} alt="rpsls rules" />
       )}
-
-      <button onClick={handleCloseRules}>X</button>
+      <button onClick={handleCloseRules}>
+        <img src={cancle} alt="" />
+      </button>
     </div>
   )
 }
