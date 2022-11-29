@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import GamePause from './GamePause'
+import GamePause from '../game_pause/GamePause'
 
 type ScoreBoardProps = {
   gameMode: string

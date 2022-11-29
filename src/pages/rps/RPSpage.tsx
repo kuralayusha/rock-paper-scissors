@@ -1,7 +1,7 @@
-import ScoreBoard from '../components/ScoreBoard'
-import SelectIcon from '../components/SelectIcon'
-import PlayerVsCpu from '../components/PlayerVsCpu'
-import Rules from '../components/Rules'
+import ScoreBoard from '../../components/score_board/ScoreBoard'
+import SelectIcon from '../../components/select_icon/SelectIcon'
+import PlayerVsCpu from '../../components/player_cpu/PlayerVsCpu'
+import Rules from '../../components/rules/Rules'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 

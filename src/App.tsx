@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import HomePage from './pages/HomePage'
-import RPSLSpage from './pages/RPSLSpage'
-import RPSpage from './pages/RPSpage'
+import HomePage from './pages/main_menu/HomePage'
+import RPSLSpage from './pages/rpsls/RPSLSpage'
+import RPSpage from './pages/rps/RPSpage'
 
 function App() {
   const [gameMode, setGameMode] = useState('')

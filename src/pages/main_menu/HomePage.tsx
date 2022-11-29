@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import rpsLogo from '../../images/logo.svg'
+import rpslsLogo from '../../images/logo-bonus.svg'
 
 type HomePageProps = {
   setGameMode: (gameMode: string) => void
@@ -14,13 +16,19 @@ function HomePage({ setGameMode }: HomePageProps) {
     setGameMode('RPSLS')
   }
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div className="home--page">
       <Link to="/rps">
-        <button onClick={handleGameModeRPS}>RPS</button>
+        <button onClick={handleGameModeRPS}>
+          <img src={rpsLogo} alt="rock paper scissors logo" />
+        </button>
       </Link>
       <Link to="/rpsls">
-        <button onClick={handleGameModeRPSLS}>RPSLS</button>
+        <button onClick={handleGameModeRPSLS}>
+          <img
+            src={rpslsLogo}
+            alt="rock paper scissors lizard spock logo"
+          />
+        </button>
       </Link>
     </div>
   )
