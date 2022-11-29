@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import rpsLogo from '../../images/logo.svg'
+import rpsDarkLogo from '../../images/logo-dark.svg'
 import rpslsLogo from '../../images/logo-bonus.svg'
+import './HomePage.css'
 
 type HomePageProps = {
   setGameMode: (gameMode: string) => void

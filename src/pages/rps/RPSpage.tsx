@@ -4,6 +4,7 @@ import PlayerVsCpu from '../../components/player_cpu/PlayerVsCpu'
 import Rules from '../../components/rules/Rules'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import './RPS.css'
 
 type RPSpageProps = {
   gameMode: string
@@ -66,8 +67,7 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
   return (
     <>
       {gameMode === 'RPS' ? (
-        <div>
-          <h1>Rock Paper Scissors</h1>
+        <div className="game--page rps">
           <ScoreBoard gameMode={gameMode} playerScore={playerScore} />
           {!playerPick ? (
             <SelectIcon

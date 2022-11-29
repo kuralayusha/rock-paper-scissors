@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
 body {
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
     font-family: 'Barlow Semi Condensed', sans-serif;
     /* padding: 0; */
     margin: 0;
@@ -11,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
     height: 100vh;
     /* padding: 0; */
     /* margin: 0; */

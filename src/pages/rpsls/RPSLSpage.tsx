@@ -4,6 +4,7 @@ import PlayerVsCpu from '../../components/player_cpu/PlayerVsCpu'
 import Rules from '../../components/rules/Rules'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import './RPSLS.css'
 
 type RPSLSpageProps = {
   gameMode: string
