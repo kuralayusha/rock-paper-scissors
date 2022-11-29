@@ -84,7 +84,10 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
               setIsPlayerWinner={setIsPlayerWinner}
             />
           )}
-          <button onClick={() => setShowRules(!showRules)}>
+          <button
+            className="rules"
+            onClick={() => setShowRules(!showRules)}
+          >
             Rules
           </button>
           {showRules && (
