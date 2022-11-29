@@ -80,7 +80,7 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
   return (
     <>
       {gameMode === 'RPSLS' ? (
-        <div className="RPSLSpage">
+        <div className="game--page rpsls">
           <ScoreBoard gameMode={gameMode} playerScore={playerScore} />
           {!playerPick ? (
             <SelectIcon
@@ -97,7 +97,10 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
               setIsPlayerWinner={setIsPlayerWinner}
             />
           )}
-          <button onClick={() => setShowRules(!showRules)}>
+          <button
+            className="rules"
+            onClick={() => setShowRules(!showRules)}
+          >
             Rules
           </button>
           {showRules && (
@@ -106,7 +109,7 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
         </div>
       ) : (
         <div>
-          this is a error you have to select a{' '}
+          this is an error you have to select a{' '}
           <Link to="/">game mode</Link>
         </div>
       )}

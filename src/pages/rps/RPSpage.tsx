@@ -96,7 +96,7 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
         </div>
       ) : (
         <div>
-          Error: you have to select a <Link to="/">game mode</Link>
+          Error: you have to select an <Link to="/">game mode</Link>
         </div>
       )}
     </>

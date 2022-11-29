@@ -8,6 +8,16 @@
     position: relative;
 }
 
+.icons--rpsls {
+    background-image: url(../../images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    width: 328px;
+    height: 312px;
+    margin: 105px 23px 0 23px;
+    padding: 0;
+    position: relative;
+}
+
 .icons--rps .rock {
     width: 129px;
     height: 126px;
@@ -22,6 +32,22 @@
     position: absolute;
     bottom: 0;
     right: 90px;
+}
+
+.icons--rpsls .rock {
+    width: 129px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border: solid 15px #9D1634;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -57px;
+    right: 11px;
 }
 
 .icons--rps .paper {
@@ -40,6 +66,22 @@
     right: 200px;
 }
 
+.icons--rpsls .paper {
+    width: 129px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border: solid 15px #4664F4;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 119px;
+    right: -19px;
+}
+
 .icons--rps .scissors {
     width: 129px;
     height: 126px;
@@ -54,4 +96,52 @@
     position: absolute;
     bottom: 200px;
     left: 200px;
+}
+
+.icons--rpsls .scissors {
+    width: 129px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border: solid 15px #EB9F0E;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 239px;
+    left: 107px;
+}
+
+.icons--rpsls .lizard {
+    width: 129px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border: solid 15px #834EE3;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -57px;
+    left: 20px;
+}
+
+.icons--rpsls .spock {
+    width: 129px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+    border: solid 15px #3FB7CD;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 119px;
+    left: -16px;
 }

@@ -41,19 +41,34 @@ function SelectIcon({ setPlayerPick, gameMode }: selectIconProps) {
         </div>
       ) : (
         <div className="icons--rpsls">
-          <button onClick={(e) => handleSelectingIcon(e)}>
+          <button
+            className="rock"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
             <img src={rock} alt="rock icon" id="rock" />
           </button>
-          <button onClick={(e) => handleSelectingIcon(e)}>
+          <button
+            className="paper"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
             <img src={paper} alt="paper icon" id="paper" />
           </button>
-          <button onClick={(e) => handleSelectingIcon(e)}>
+          <button
+            className="scissors"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
             <img src={scissors} alt="scissors icon" id="scissors" />
           </button>
-          <button onClick={(e) => handleSelectingIcon(e)}>
+          <button
+            className="lizard"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
             <img src={lizard} alt="lizard icon" id="lizard" />
           </button>
-          <button onClick={(e) => handleSelectingIcon(e)}>
+          <button
+            className="spock"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
             <img src={spock} alt="spock icon" id="spock" />
           </button>
         </div>
