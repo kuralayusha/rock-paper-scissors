@@ -1,3 +1,11 @@
+import rock from '../../images/icon-rock.svg'
+import paper from '../../images/icon-paper.svg'
+import scissors from '../../images/icon-scissors.svg'
+import lizard from '../../images/icon-lizard.svg'
+import spock from '../../images/icon-spock.svg'
+import rpsBackground from '../../images/bg-triangle.svg'
+import './SelectIcon.css'
+
 type selectIconProps = {
   setPlayerPick: (playerPick: string) => void
   gameMode: string
@@ -11,39 +19,42 @@ function SelectIcon({ setPlayerPick, gameMode }: selectIconProps) {
   return (
     <>
       {gameMode === 'RPS' ? (
-        <div>
-          <button id="rock" onClick={(e) => handleSelectingIcon(e)}>
-            ROCK
-          </button>
-          <button id="paper" onClick={(e) => handleSelectingIcon(e)}>
-            PAPER
-          </button>
+        <div className="icons--rps">
           <button
-            id="scissors"
+            className="rock"
             onClick={(e) => handleSelectingIcon(e)}
           >
-            SCISSORS
+            <img src={rock} alt="rock icon" id="rock" />
+          </button>
+          <button
+            className="paper"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
+            <img src={paper} alt="paper icon" id="paper" />
+          </button>
+          <button
+            className="scissors"
+            onClick={(e) => handleSelectingIcon(e)}
+          >
+            <img src={scissors} alt="scissors icon" id="scissors" />
           </button>
         </div>
       ) : (
-        <div>
-          <button id="rock" onClick={(e) => handleSelectingIcon(e)}>
-            ROCK
+        <div className="icons--rpsls">
+          <button onClick={(e) => handleSelectingIcon(e)}>
+            <img src={rock} alt="rock icon" id="rock" />
           </button>
-          <button id="paper" onClick={(e) => handleSelectingIcon(e)}>
-            PAPER
+          <button onClick={(e) => handleSelectingIcon(e)}>
+            <img src={paper} alt="paper icon" id="paper" />
           </button>
-          <button
-            id="scissors"
-            onClick={(e) => handleSelectingIcon(e)}
-          >
-            SCISSORS
+          <button onClick={(e) => handleSelectingIcon(e)}>
+            <img src={scissors} alt="scissors icon" id="scissors" />
           </button>
-          <button id="lizard" onClick={(e) => handleSelectingIcon(e)}>
-            LIZARD
+          <button onClick={(e) => handleSelectingIcon(e)}>
+            <img src={lizard} alt="lizard icon" id="lizard" />
           </button>
-          <button id="spock" onClick={(e) => handleSelectingIcon(e)}>
-            SPOCK
+          <button onClick={(e) => handleSelectingIcon(e)}>
+            <img src={spock} alt="spock icon" id="spock" />
           </button>
         </div>
       )}

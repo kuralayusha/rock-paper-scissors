@@ -81,7 +81,6 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
     <>
       {gameMode === 'RPSLS' ? (
         <div className="RPSLSpage">
-          <h1>Rock Paper Scissors Lizard Spock</h1>
           <ScoreBoard gameMode={gameMode} playerScore={playerScore} />
           {!playerPick ? (
             <SelectIcon
