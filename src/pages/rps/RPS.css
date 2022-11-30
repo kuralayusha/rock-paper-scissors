@@ -20,3 +20,11 @@
     bottom: 56px;
     left: 124px;
 }
+
+@media screen and (min-width: 900px) {
+    .game--page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

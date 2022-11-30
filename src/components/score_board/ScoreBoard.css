@@ -52,3 +52,30 @@
     text-align: center;
     color: #565468;
 }
+
+@media screen and (min-width: 768px) {
+    .score--board {
+        width: 700px;
+        height: 150px;
+    }
+
+    .score--board.rps img {
+        width: 159px;
+    }
+
+    .score--board button {
+        width: 150px;
+        height: 114px;
+    }
+
+    .score--board button small {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.5px;
+    }
+
+    .score--board button p {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}
