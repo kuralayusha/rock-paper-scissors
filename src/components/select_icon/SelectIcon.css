@@ -145,3 +145,37 @@
     bottom: 119px;
     left: -16px;
 }
+
+
+@media screen and (min-width: 900px) {
+    .icons--rps {
+        background-size: 428px 335px;
+        width: 434px;
+        height: 338px;
+        margin: 60px 32px 0 32px;
+    }
+
+    .icons--rps .rock {
+        width: 198px;
+        height: 194px;
+        border: solid 25px #9D1634;
+        bottom: 0;
+        right: 123px;
+    }
+
+    .icons--rps .paper {
+        width: 198px;
+        height: 194px;
+        border: solid 25px #4664F4;
+        bottom: 214px;
+        right: 292px;
+    }
+
+    .icons--rps .scissors {
+        width: 198px;
+        height: 194px;
+        border: solid 25px #EB9F0E;
+        bottom: 215px;
+        left: 278px;
+    }
+}
