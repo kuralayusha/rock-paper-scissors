@@ -25,3 +25,21 @@
 .home--page button img {
     width: 100px;
 }
+
+@media screen and (min-width: 900px) {
+    .home--page {
+        justify-content: center;
+    }
+
+    .home--page button {
+        width: 350px;
+        height: 400px;
+        border-radius: 7%;
+    }
+
+    .home--page a {
+        padding: 0 20px;
+    }
+
+    
+}
