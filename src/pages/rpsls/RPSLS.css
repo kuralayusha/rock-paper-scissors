@@ -21,6 +21,11 @@
     transition: all 0.2s ease-in-out;
 }
 
+.game--page.rpsls .rules:hover {
+    background-color: #FFFFFF;
+    color: #2A45C2;
+}
+
 @media screen and (min-width: 900px) {
     .rules {
         margin-top: -1%;
