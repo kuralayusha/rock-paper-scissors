@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/main_menu/HomePage'
 import RPSLSpage from './pages/rpsls/RPSLSpage'
@@ -9,7 +9,7 @@ function App() {
   const [gameMode, setGameMode] = useState('')
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             path="/"
@@ -34,7 +34,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
