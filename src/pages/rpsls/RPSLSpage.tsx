@@ -29,7 +29,9 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
     const cpuPicks = ['rock', 'paper', 'scissors', 'lizard', 'spock']
     const randomPick =
       cpuPicks[Math.floor(Math.random() * cpuPicks.length)]
-    setCpuPick(randomPick)
+    setTimeout(() => {
+      setCpuPick(randomPick)
+    }, 1000)
   }
 
   // check the winner and set the score board accordingly
@@ -59,8 +61,8 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
         (playerPick === 'paper' && cpuPick === 'rock') ||
         (playerPick === 'paper' && cpuPick === 'spock')
       ) {
-        setPlayerScore(playerScore + 1)
         setTimeout(() => {
+          setPlayerScore(playerScore + 1)
           setIsPlayerWinner(true)
         }, 1000)
       } else if (playerPick === cpuPick) {
@@ -68,8 +70,8 @@ function RPSLSpage({ gameMode, setGameMode }: RPSLSpageProps) {
           setIsPlayerWinner('draw')
         }, 1000)
       } else {
-        setPlayerScore(playerScore - 1)
         setTimeout(() => {
+          setPlayerScore(playerScore - 1)
           setIsPlayerWinner(false)
         }, 1000)
       }

@@ -1,3 +1,29 @@
 .game--page {
     width: 100%;
 }
+
+.game--page.rpsls .rules {
+    width: 128px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 900px) {
+    .rules {
+        margin-top: -1%;
+        margin-left: 84%;
+    }
+}

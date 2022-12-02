@@ -9,6 +9,7 @@
     border-radius: 5px;
     background-color: transparent;
     height: 96px;
+    width: 311px;
 }
 
 .score--board.rps img {
@@ -26,7 +27,6 @@
     width: 80px;
     height: 72px;
     border: none;
-    cursor: pointer;
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;

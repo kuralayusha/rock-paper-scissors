@@ -33,3 +33,14 @@
     color: #3B4262;
     text-transform: uppercase;
 }
+
+.winner button:hover {
+    color: #DB2E4D;
+}
+
+/* @media screen and (min-width: 900px) {
+    .winner {
+        position: absolute;
+        top: 300px;
+    }
+} */

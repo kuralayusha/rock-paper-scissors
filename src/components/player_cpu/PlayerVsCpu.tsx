@@ -59,6 +59,7 @@ function PlayerVsCpu({
             )}
             <h1>You Picked</h1>
           </div>
+
           <div className="cpu--pics">
             {cpuPick === 'rock' ? (
               <button className="rock">

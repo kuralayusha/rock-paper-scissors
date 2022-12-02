@@ -21,10 +21,16 @@
     align-items: center;
     justify-content: space-around;
     width: 375px;
-    height: 100%;
 }
 
 .player--pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpu--pics {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,5 +130,81 @@
     height: 126px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
+    
+    .player--pics {
+        flex-direction: column-reverse;
+    }
+
+    .cpu--pics {
+        flex-direction: column-reverse;
+    }
+
+    .player--pics .rock,
+    .cpu--pics .rock {
+        width: 293px;
+        height: 300px;
+        border: solid 35px #9D1634;
+    }
+
+    .player--pics .paper,
+    .cpu--pics .paper {
+        width: 293px;
+        height: 300px;
+        border: solid 35px #4664F4;
+    }
+    .player--pics .scissors,
+    .cpu--pics .scissors {
+        width: 293px;
+        height: 300px;
+        border: solid 35px #EB9F0E;
+    }
+    .player--pics .lizard,
+    .cpu--pics .lizard {
+        width: 293px;
+        height: 300px;
+        border: solid 35px #834EE3;
+    }
+    .player--pics .spock,
+    .cpu--pics .spock {
+        width: 293px;
+        height: 300px;
+        border: solid 35px #3FB7CD;
+    }
+
+    .player--pics button img {
+        width: 100px;
+    }
+
+    .cpu--pics button img {
+        width: 100px;
+    }
+
+    .player--pics h1,
+    .cpu--pics h1 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 3px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .PvC {
+        margin-top: 0;
+    }
+
+    .player--pics button,
+    .cpu--pics button {
+        margin: 0 30px;
+    }
+
+    /* .PvC--icons {
+        justify-content: space-between;
+        width: 70vw;
+    } */
+
+    .cpu--pics .empty--cpu--icon {
+        width: 293px;
+        height: 300px;
+    }
 }
