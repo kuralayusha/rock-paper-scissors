@@ -80,9 +80,11 @@ function PlayerVsCpu({
               <button className="spock">
                 <img src={spock} />
               </button>
-            ) : (
-              <div />
-            )}
+            ) : !cpuPick ? (
+              <button className="empty--cpu--icon">
+                <img />
+              </button>
+            ) : null}
             <h1>The House Picked</h1>
           </div>
         </div>

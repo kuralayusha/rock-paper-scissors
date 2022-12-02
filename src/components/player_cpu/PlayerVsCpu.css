@@ -115,3 +115,14 @@
     margin-top: 17px;
     text-transform: uppercase;
 }
+
+.cpu--pics .empty--cpu--icon {
+    background-color: rgba(0, 0, 0, 0.1);;
+    border: none;
+    border-radius: 50%;
+    width: 129px;
+    height: 126px;
+}
+
+@media screen and (max-width: 900px) {
+}

@@ -29,7 +29,9 @@ function RPSpage({ gameMode, setGameMode }: RPSpageProps) {
     const cpuPicks = ['rock', 'paper', 'scissors']
     const randomPick =
       cpuPicks[Math.floor(Math.random() * cpuPicks.length)]
-    setCpuPick(randomPick)
+    setTimeout(() => {
+      setCpuPick(randomPick)
+    }, 1000)
   }
 
   // check the winner and set the score board accordingly
